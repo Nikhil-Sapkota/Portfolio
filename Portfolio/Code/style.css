@@ -1,0 +1,968 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border box;
+    font-family: 'system-ui', 'yatra one';
+    /* border: 2px solid #00ffcc; */
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: #14151A;
+    margin: 80px 0 0 0;
+}
+
+.whole-body {
+    width: 100%;
+    height: 100%;
+    background: #14151A;
+    margin: 80px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #14151A;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 155;
+}
+
+.circle-home-button {
+    display: flex;
+    gap: 8px;
+    margin: 60px 0 0 55px;
+}
+
+.circle {
+    height: 18px;
+    width: 18px;
+    border: none;
+    background: #FFE500;
+    border-radius: 50%;
+    align-self: baseline;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    border: none;
+    gap: 20px;
+    margin: 0 20px 0 0;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: #000b11;
+    font-size: 15px;
+    font-family: "fredoka";
+    border: none;
+    font-weight: 550;
+}
+.contact-me-button-icon-and-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    gap: 5px;
+    background: #FFE500;
+    border-radius: 8px;
+    height: 35px;
+    width: 145px;
+    font-family: "fredoka";
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.log-in-button {
+    height: 35px;
+    width: 100px;
+    background: #FFE500;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fredoka";
+    font-weight: 400;
+    font-size: 15px;
+}
+
+/* hover effect on the log in and contact me button */
+.log-in-button:hover {
+    background: #ffd500;
+    transition: 0.45s;
+}
+
+a:hover .log-in-button {
+    color: #303334;
+}
+
+.contact-me-button-icon-and-text:hover {
+    background: #ffd500;
+    transition: 0.45s;
+    color: #303334;
+}
+
+/* .follow-me-on-the-twitter hover effect  */
+.follow-me-on-the-twitter:hover {
+    color: #303334;
+    background: #FFD500;
+}
+
+.contact-me-button-icon-and-text a {
+    font-family: "Fredoka";
+    text-decoration: none;
+    color: #000b11;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    font-weight: 550;
+}
+
+.projects-and-side-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.side-menu {
+    width: 15vw;
+    height: 85vh;
+    background: #1C2222;
+    margin: 25px 0 0 20px;
+    border-radius: 8px;
+    position: fixed;
+    z-index: 999;
+    left: 10px;
+}
+
+.icon-home-link {
+    display: flex;
+    gap: 40px;
+    margin: 9px 0 0 0;
+}
+
+.icon-home-link a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #C2C3C3;
+    font-weight: 500;
+}
+
+.icon-snippet .front-arrow {
+    margin: 0 0 0 -6px;
+}
+
+.text-snippet {
+    margin: 0 0 0 -6px;
+}
+
+.projects-and-intro {
+    margin: 0 0 0 340px;
+}
+
+.icon-navigation-for-page-interaction {
+    margin: 60px 0 0 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-text {
+    color: #C2C3C3;
+    margin: 40px 10px;
+    font-family: 'system-ui', "Fredoka";
+    font-weight: 590;
+    font-size: 22px;
+}
+
+.social-app-link-and-logo {
+    margin: 30px 0 0 0;
+    display: flex;
+    gap: 40px;
+}
+
+.social-app-link {
+    margin: 20px 0 0 30px;
+}
+
+.social-app-link-and-logo a {
+    text-decoration: none;
+    font-family: "system-ui";
+    font-size: 17px;
+    color: #C2C3C3;
+    font-weight: 500;
+}
+
+#person {
+    font-size: 15px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.github {
+    color: #000;
+}
+
+.instagram {
+    color: #ff0095;
+}
+
+.twitter {
+    color: #0059ff;
+}
+
+.linkedin {
+    color: #006eff;
+}
+
+.stackoverflow {
+    color: #ff9d00;
+}
+
+.youtube {
+    color: #ff4000;
+}
+
+.projects-and-intro {
+    width: 100%;
+}
+
+.introduction-section {
+    width: 97%;
+    height: 130px;
+    margin: auto;
+    border-radius: 10px;
+    background-image: url(bg2.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile .profile-pic {
+    height: 100px;
+    width: 100px;
+    margin: auto 20px;
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    border: 1.2px solid #FFCC00;
+    border-radius: 50%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+
+.introduction-details-name {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.introduction-details-name p {
+    font-family: "Fredoka", "System-ui";
+    color: #f1f9fc;
+    font-size: 20px;
+}
+
+.intro-name-websitename .webname {
+    font-family: "Montserrat";
+    font-size: 15px;
+}
+
+.follow-me-on-the-twitter {
+    display: flex;
+    align-items: center;
+    background: #FFE500;
+    height: 35px;
+    width: 205px;
+    border-radius: 10px;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+    margin: 0 25px 0 0;
+    cursor: pointer;
+}
+
+#Twitter {
+    margin: 9px 0 0 0;
+}
+
+.follow-me-on-the-twitter a {
+    text-decoration: none;
+    color: #000b11;
+    font-size: 15px;
+    font-family: "Fredoka";
+    font-weight: 500;
+}
+
+.projects-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: auto;
+    gap: 50px;
+    width: 95%;
+    height: 50vh;
+}
+
+.project-text {
+    margin: 40px 0 0 10px;
+    font-family: "Fredoka";
+    font-size: 22px;
+    color: #C2C3C3
+}
+
+.single-project-box {
+    height: 270px;
+    width: 300px;
+    margin: 25px 0 0 0;
+}
+
+.project-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.img {
+    height: 200px;
+    width: 100%;
+}
+
+.img img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.details-about-projects {
+    height: 70px;
+    background: #e4f4fa;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.details-about-projects p {
+    font-size: 11px;
+    color: #000218;
+    font-family: "Fredoka";
+    margin: 10px 0 0 15px;
+}
+
+.details-about-projects h3 {
+    font-family: "system-ui";
+    color: #000218;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 0 0 10px;
+}
+
+.Iknow-Box {
+    height: 200px;
+    width: 200px;
+}
+
+.WhatIknow-and-more-projects {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+    width: 95%;
+    margin: auto;
+}
+
+.Whatiknow-section {
+    width: 75%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.more-project-section {
+    width: 20%;
+    height: 92%;
+    background: #1C2222;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.more-project-section p {
+    color: #C2C3C3;
+    font-family: "fredoka";
+    align-items: baseline;
+    margin: 30px 0 0 25px;
+    font-size: 12px;
+}
+
+.more-project-section h3 {
+    color: #C2C3C3;
+    font-family: "fredoka";
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    align-items: baseline;
+    margin: 20px 0 0 18px;
+    font-size: 20px;
+}
+
+.project-one-more {
+    margin: 30px 0 0 0;
+}
+
+.What-iknow-text {
+    font-family: "Fredoka";
+    font-size: 22px;
+    color: #C2C3C3;
+    margin: 0 0 0 10px;
+}
+
+.know-boxes {
+    display: flex;
+    height: 50vh;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.know {
+    height: 220px;
+    width: 250px;
+    border-radius: 8px;
+    background: #1C2222;
+}
+
+.know-heading {
+    color: #C2C3C3;
+    font-family: "Fredoka";
+    font-size: 22px;
+    margin: 10px 0 0 20px;
+}
+
+.head-and-icon {
+    display: flex;
+    gap: 10px;
+    height: 20px;
+    align-items: center;
+}
+
+.know-elements span {
+    font-family: "Fredoka";
+    font-size: 15px;
+    color: #C2C3C3;
+    line-height: 20px;
+    padding: 5px;
+}
+
+.know-elements {
+    margin: 25px 0 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.html-and-bunjs-redis-aws {
+    border: 1.5px solid #ff9900;
+    border-radius: 5px;
+}
+
+.css-and-expressjs-mysql-kubernetes {
+    border: 1.5px solid #FFE500;
+    border-radius: 5px;
+}
+
+.javascript-and-python-github-postresql {
+    border: 1.5px solid #0080ff;
+    border-radius: 5px;
+}
+
+.Typescript-and-php-sql-docker {
+    border: 1.5px solid #00c8ff;
+    border-radius: 5px;
+}
+
+.react-and-javascript-mongodb-terraform {
+    border: 1.5px solid #00ff00;
+    border-radius: 5px;
+}
+
+.nextjs13-and-Elysia-Ansible {
+    border: 1.5px solid #ffc400;
+    border-radius: 5px;
+}
+
+.tailwind-Nodejs-jekins {
+    border: 1.5px solid #a6ff00;
+    border-radius: 5px;
+}
+
+.Web-projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.web-text {
+    font-family: "Fredoka";
+    font-size: 22px;
+    color: #C2C3C3;
+    margin: 0 0 0 55px;
+    line-height: 1.7;
+}
+
+.web-project-box {
+    height: 50vh;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box-one-web {
+    height: 300px;
+    width: 330px;
+}
+
+.photo img {
+    height: 200px;
+    width: 330px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.web-project-details {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.snippet-numbers {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 0 15px;
+}
+
+.time-from-updated {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.new-arrow-icon {
+    margin: 7px 0 0 -4px;
+}
+
+.tittle {
+    font-family: "fredoka";
+    color: #C2C3C3;
+    font-size: 22px;
+    margin: 17px 10px 0 15px;
+    font-weight: 500;
+}
+
+.web-project-details a {
+    text-decoration: none;
+    font-family: "fredoka";
+    color: #C2C3C3;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.other-text {
+    font-size: 22px;
+    color: #C2C3C3;
+    margin: 10px 0 40px 55px;
+    font-weight: 500;
+}
+
+.others-projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.other-projects-boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 95%;
+    margin: auto;
+}
+
+.box-other-project {
+    height: 300px;
+    width: 350px;
+}
+
+.box-other-project img {
+    border-radius: 8px;
+}
+
+.project-tittle {
+    font-family: "fredoka";
+    color: #C2C3C3;
+    font-size: 22px;
+    margin: 17px 10px 0 15px;
+    font-weight: 500;
+}
+
+.snippet-numbers {
+    display: flex;
+    justify-content: start;
+}
+
+.time-from-updated {
+    display: flex;
+    justify-content: end;
+}
+
+.project-tittle-details {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.time-from-updated a {
+    text-decoration: none;
+    color: #C2C2C3;
+    font-size: 15px;
+}
+
+.snippet-numbers a {
+    text-decoration: none;
+    color: #C2C2C3;
+    font-size: 15px;
+}
+
+.get-in-touch-section {
+    margin: 100px auto 0 auto;
+    height: 65vh;
+    background: #292d2f;
+    width: 100%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.programming-is-love {
+    font-size: 30px;
+    color: #bfbec2;
+    font-weight: 500;
+    font-family: "Fredoka";
+}
+
+.GetInTouch {
+    font-size: 30px;
+    color: #bfbec2;
+    font-weight: 500;
+    font-family: "Fredoka";
+}
+
+.heading-for-getInTouch {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px 0 0 0;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 50vw;
+}
+
+.form-elements {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.form-elements input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #e9e9e9;
+    outline: none;
+    height: 25px;
+    width: 400px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form span {
+    font-family: "Fredoka";
+    font-size: 15px;
+    color: #C2C3C3;
+    line-height: 20px;
+    padding: 5px;
+}
+
+.contact-form .submit {
+    height: 35px;
+    width: 150px;
+    font-size: 22px;
+    cursor: pointer;
+    border: none;
+    color: #000e12;
+    background: #FFE500;
+    font-weight: 500;
+    font-family: "Fredoka";
+    margin: 20px 0 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.contact-form .submit:hover {
+    background: #ffd500;
+    color: #011014;
+    transition: 0.45s ease-in-out;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 20vw;
+    flex-direction: row;
+    height: 40vh;
+    width: 100%;
+    background: #1C2222;
+}
+
+.social-media-link-section {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social-media-link-section a {
+    text-decoration: none;
+    color: #C2C3C3;
+    font-size: 15px;
+    font-family: "fredoka";
+    font-weight: 450;
+}
+
+.copyright-and-email-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.copyright-and-email-section p {
+    text-decoration: none;
+    color: #C2C3C3;
+    font-size: 25px;
+    font-family: "fredoka";
+    font-weight: 450;
+    margin: 15px 0 0 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #14151A;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #313636;
+    border-radius: 5px;
+}
+
+.BarMenu {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+@media (max-width: 1400px) {
+    .side-menu {
+        display: none;
+    }
+
+    .projects-and-side-menu {
+        margin: 0;
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    .BarMenu {
+        display: flex;
+        margin: 0 0 0 25px;
+    }
+
+    .introduction-section {
+        width: 100%;
+        display: flex;
+        height: 80px;
+    }
+
+    .projects-and-intro {
+        margin: 0 0 0 0;
+    }
+
+    .projects-section {
+        display: flex;
+        flex-direction: row;
+        margin: 20px 0 0 0;
+        justify-content: center;
+    }
+
+    .project-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .whole-body {
+        widows: 100%;
+    }
+
+    .intro-name p {
+        font-size: 12px;
+    }
+
+    .more-project-section {
+        display: none;
+    }
+
+    .profile .profile-pic {
+        width: 70px;
+        height: 70px;
+        margin: 0 -2px 0 0;
+    }
+
+    .circle-home-button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .side-menu {
+        border: 2px solid #ff0000;
+    }
+
+    .projects-and-intro {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .projects-and-side-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .WhatIknow-and-more-projects {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+    }
+
+    .know {
+        margin: 15px 10px 0 0;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Web-projects {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .web-project-box {
+        margin: 0px auto;
+    }
+
+    * {
+        height: auto;
+        width: auto;
+    }
+
+    .barmenu-icon {
+        margin: 0 15px 0 0;
+    }
+}
+
+@media (min-width: 1000px) {
+    .BarMenu {
+        display: none;
+    }
+
+    .barmenu-icon {
+        margin: 0 15px 0 0;
+    }
+}
+
+.barmenu-icon {
+    margin: 0 65px 0 0;
+}
+
+input {
+    color: #FFFFFF;
+}
